@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2versia.css">
+    <title>versia2</title>
+</head>
+<body>
+    <div class="slide_show main">
+
+        <div class="Slides">
+
+            <input type="radio" name="btn" id="btn1" checked>
+            <input type="radio" name="btn" id="btn2">
+            <input type="radio" name="btn" id="btn3">
+            <input type="radio" name="btn" id="btn4">
+            <input type="radio" name="btn" id="btn5">
+            <input type="radio" name="btn" id="btn6">
+            <input type="radio" name="btn" id="btn7">
+            <input type="radio" name="btn" id="btn8">
+            <input type="radio" name="btn" id="btn9">
+
+            <div class="Slide Slide1">
+                <img src="images/1_Nature_1.png" id="img1">
+            </div>
+            <div class="Slide Slide2">
+                <img src="images/images (1).jpg" id="img2">
+            </div>
+            <div class="Slide Slide3">
+                <img src="images/images (2).jpg" id="img3">
+            </div>
+            <div class="Slide Slide4">
+                <img src="images/images (3).jpg" id="img4">
+            </div>
+            <div class="Slide Slide5">
+                <img src="images/images.jpg">
+            </div>
+            <div class="Slide Slide6">
+                <img  src="images/italy-fks.png">
+            </div>
+            <div class="Slide Slide7">
+                <img src="images/lovepik.png">
+            </div>
+            <div class="Slide Slide8">
+                <img src="images/nature-3yp.png">
+            </div>
+            <div class="Slide Slide9">
+                <img src="images/завантаження.jpg">
+        </div>  
+        <div class="novigation">
+            <label for="btn1" class="nav"></label>
+            <label for="btn2" class="nav"></label>
+            <label for="btn3" class="nav"></label>
+            <label for="btn4" class="nav"></label>
+            <label for="btn5" class="nav"></label>
+            <label for="btn6" class="nav"></label>
+            <label for="btn7" class="nav"></label>
+            <label for="btn8" class="nav"></label>
+            <label for="btn9" class="nav"></label>
+        </div> 
+ </div>
+    <script>
+            document.addEventListener("keydown", (e) => {
+            const slides = document.querySelectorAll(".Slide");
+                for(let i = 0; i < slides.length; i++) {
+                    const element = slides[i];
+            element.style.display = "none";
+            switch(e.code) {
+                case 'Digit1':
+                slides[0].style.display = "inline-flex";
+                    break;
+                case 'Digit2':
+                slides[1].style.display = "inline-flex"; 
+                    break;
+                case 'Digit3':
+                slides[3].style.display = "inline-flex";
+                    break;
+                case 'Digit4':   
+                slides[4].style.display = "inline-flex";
+                    break;
+                 case 'Digit5':   
+                 slides[5].style.display = "inline-flex";
+                    break;
+                 case 'Digit6':   
+                slides[6].style.display = "inline-flex";
+                    break;
+                 case 'Digit7':   
+                 slides[7].style.display = "inline-flex";
+                    break;
+                case 'Digit8':   
+                slides[8].style.display = "inline-flex";
+                    break;
+                 case 'Digit9':   
+                slides[9].style.display = "inline-flex";
+                    break;
+                }
+            }
+        });
+        
+    </script>
+</body>
+</html>
